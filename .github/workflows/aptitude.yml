@@ -16,7 +16,7 @@ jobs:
       uses: aptible/aptible-deploy-action@v4
       with:
         type: git
-        app: hello4499
-        environment: hello4499
+        app: botmirrorleech
+        environment: alpha
         username: ${{ secrets.APTIBLE_USERNAME }}
         password: ${{ secrets.APTIBLE_PASSWORD }} 
