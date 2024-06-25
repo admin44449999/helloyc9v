@@ -2,7 +2,7 @@ name: aptible
 
 on:
   push:
-    branches: [master]
+    branches: [alpha]
   workflow_dispatch: {}
 
 jobs:
@@ -19,6 +19,4 @@ jobs:
         app: botmirrorleech
         environment: alpha
         username: ${{ secrets.APTIBLE_USERNAME }}
-        password: ${{ secrets.APTIBLE_PASSWORD }} 
-    - name: Deploy to Aptibl
-      run : aptible deploy --app $HANDLE --git-commitish=master
+        password: ${{ secrets.APTIBLE_PASSWORD }}
