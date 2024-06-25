@@ -20,3 +20,5 @@ jobs:
         environment: alpha
         username: ${{ secrets.APTIBLE_USERNAME }}
         password: ${{ secrets.APTIBLE_PASSWORD }} 
+    - name: Deploy to Aptibl
+      run : aptible deploy --app $HANDLE --git-commitish=master
